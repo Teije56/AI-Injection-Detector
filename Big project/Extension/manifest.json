@@ -3,9 +3,14 @@
   "version": "1.0",
   "manifest_version": 3,
   "action": {
-    "default_popup": "Popup/popup.html"
+    "default_popup": "Popup/popup.html",
+    "default_icon": "Images/Icon.png"
   },
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ]
 }
