@@ -1,0 +1,11 @@
+{
+  "name": "AI Injection Detector",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "Popup/popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

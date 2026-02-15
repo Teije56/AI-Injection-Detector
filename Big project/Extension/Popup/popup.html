@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>AI Injection Detector</h2>
+        
+        <div id="statusArea">
+            <p id="statusText">Ready to Scan</p>
+        </div>
+
+        <div class="button-group">
+            <button id="scanBtn" class="primary-btn">Scan Now</button>
+            <button id="detailsBtn" class="secondary-btn">View Scan Results</button>
+        </div>
+
+        <div id="detailsPanel" class="hidden">
+            <ul id="resultsList">
+                <li>No threats found yet.</li>
+            </ul>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
