@@ -1,16 +1,14 @@
 {
+  "manifest_version": 3,
   "name": "AI Injection Detector",
   "version": "1.0",
-  "manifest_version": 3,
-  "action": {
-    "default_popup": "Popup/popup.html",
-    "default_icon": "Images/Icon.png"
-  },
-  "background": {
-    "service_worker": "background.js"
-  },
+  "description": "Scans the current page for hidden AI prompt injections.",
   "permissions": [
     "activeTab",
     "scripting"
-  ]
+  ],
+  "action": {
+    "default_popup": "Popup/popup.html",
+    "default_icon": "Images/Icon.png"
+  }
 }
