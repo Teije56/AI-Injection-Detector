@@ -2,7 +2,7 @@ function scraper() {
     // Create location to store page information
     let data = {
         generalText: document.body.innerText, // Normal text
-        hidden: [], // Hidden CSS text
+        hidden: [], // Hidden text
         comments: [] // Code comments
     };
 
@@ -20,7 +20,7 @@ function scraper() {
 
         if (isInvisible) {
             const hiddenText = box.textContent.trim();
-            // Look for hidden text thats not duplicated add it to data
+            // Look for hidden text thats not duplicated adds  it to data
             if (hiddenText && !data.hidden.includes(hiddenText)) {
                 data.hidden.push(hiddenText);
             }
